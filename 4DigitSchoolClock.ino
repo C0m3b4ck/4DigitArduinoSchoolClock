@@ -29,10 +29,6 @@
  *     1. Current time
  *     2. Next lesson name
  *     3. Next lesson start time
- *
- *   UP/DOWN enter edit mode to change day, hour, minute.
- *   In edit mode, UP/DOWN adjust values, SUBMIT cycles
- *   through day -> hour -> minute -> confirm.
  ********************************************************************** */
 
 
@@ -806,11 +802,6 @@ void loop() {
 
     if (buttonPressed(submitButton)) {
       displayMode = (DisplayMode)((displayMode + 1) % 3);
-    }
-
-    if (buttonPressed(upButton) || buttonPressed(downButton)) {
-      setupMode = true;
-      setupStage = 0;
     }
   }
 
