@@ -720,6 +720,8 @@ void setup() {
     }
 
     if (buttonPressed(submitButton)) {
+      delay(200);
+
       loadWord("HHHH");
       unsigned long start = millis();
       while (millis() - start < 500) {
@@ -771,6 +773,8 @@ void loop() {
     }
 
     if (buttonPressed(submitButton)) {
+      delay(200);
+
       loadWord("HHHH");
       unsigned long start = millis();
       while (millis() - start < 500) {
